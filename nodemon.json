@@ -1,3 +1,6 @@
 {
-  "ext": ".ts, .js, .yaml"
+  "ext": ".ts, .js, .yaml",
+  "execMap": {
+    "ts": "ts-node"
+  }
 }

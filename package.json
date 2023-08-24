@@ -5,8 +5,8 @@
   "main": "src/index.ts",
   "scripts": {
     "build": "npx tsc",
-    "start": "TZ='UTC' node dist/index.js",
-    "dev": "TZ='UTC' nodemon src/index.ts",
+    "start": "TZ='UTC' ts-node -r tsconfig-paths/register dist/index.js",
+    "dev": "TZ='UTC' nodemon -r tsconfig-paths/register src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src/**/*.ts",
     "format": "eslint src/**/*.ts --fix",
@@ -40,6 +40,7 @@
     "nodemon": "^3.0.1",
     "prettier": "^3.0.2",
     "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.2.2"
   },
   "lint-staged": {

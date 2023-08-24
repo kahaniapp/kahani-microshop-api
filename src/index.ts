@@ -5,7 +5,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import morgan from 'morgan';
 
-import apiV1Router from './api/v1';
+import apiV1Router from '@/api/v1';
 
 dotenv.config();
 

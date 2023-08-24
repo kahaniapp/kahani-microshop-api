@@ -23,10 +23,11 @@
             "groups": [
               // The main event
               ["^express"], // Third party
+              ["^@?\\w"], // Node.js builtins
+              ["^\\u0000"], // Side effect imports
               ["^[\\w@]"], // Common local aliases
-              // Anything that starts with a dot
-              ["^\\.{2}"],
-              ["^\\."], // Side effect imports
+              ["^\\.{2}"], // Parent imports. Put `..` last
+              ["^\\."], // Other relative imports. Put same-folder imports and `.` last
               ["^\\u0000"] // Style imports
             ]
           }

@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Node microservice app for Kahani Microshops",
   "main": "src/index.ts",
+  "engines": {
+    "node": "18.17.1",
+    "yarn": "1.22.19"
+  },
   "scripts": {
     "build": "npx tsc",
     "start": "TZ='UTC' ts-node -r tsconfig-paths/register dist/index.js",
@@ -48,5 +52,9 @@
       "eslint --fix",
       "prettier --write"
     ]
+  },
+  "volta": {
+    "node": "18.17.1",
+    "yarn": "1.22.19"
   }
 }

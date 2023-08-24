@@ -3,7 +3,7 @@
 > An express node app microservice for Kahani Microshops
 
 ## Setup Env
-
+- Install [Volta](https://volta.sh/), a version manager tool for yarn and node & others (no more nvm etc)
 - Clone repo - `git clone [INSERT REPO NAME]`
 - Install deps - `yarn install`
 - Ensure VSCode has the [prettier plugin](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) enabled
